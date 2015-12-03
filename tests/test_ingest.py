@@ -1,5 +1,5 @@
 from unittest import TestCase
-from CapitainsFlint.ingest import MyCapytain_Local_Parser
+from CapitainsFlint.ingest import MyCapytainLocalParser
 
 
 class TestCapitainParser(TestCase):
@@ -7,7 +7,7 @@ class TestCapitainParser(TestCase):
     def test_passages(self):
         """ Test that passage retrieving works well
         """
-        parsed = MyCapytain_Local_Parser(
+        parsed = MyCapytainLocalParser(
             "xml_resources/1294.002.xml",
             "urn:cts:latinLit:phi1294.phi002:perseus-lat2"
         )
